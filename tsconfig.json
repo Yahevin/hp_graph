@@ -19,14 +19,20 @@
     "baseUrl": ".",
     "paths": {
       "@/*": [
-        "./app/*"
+        "./src/*"
       ]
-    }
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "next-env.d.ts",
-    "./app/*.ts",
-    "./app/*.tsx"
+    "./src/*.ts",
+    "./src/*.tsx",
+    ".next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"
